@@ -8,6 +8,7 @@ body {
     background-color: rgb(250, 224, 180);
     /* background-color: rgb(195, 247, 210); */
     line-height: 1.5em;
+    font-family: arial, helvetica;
 }
 
 .page {
