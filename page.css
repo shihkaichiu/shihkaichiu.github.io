@@ -7,8 +7,7 @@ body {
     /* background-color: rgb(237, 206, 171); */
     background-color: rgb(250, 224, 180);
     /* background-color: rgb(195, 247, 210); */
-    font-family: arial, helvetica;
-    line-height: 24px;
+    line-height: 1.5em;
 }
 
 .page {
