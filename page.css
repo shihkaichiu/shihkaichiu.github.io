@@ -5,7 +5,10 @@
 
 body {
     /* background-color: rgb(237, 206, 171); */
-    background-color: rgb(250, 224, 180)
+    background-color: rgb(250, 224, 180);
+    /* background-color: rgb(195, 247, 210); */
+    font-family: arial, helvetica;
+    line-height: 24px;
 }
 
 .page {
@@ -14,9 +17,9 @@ body {
     background: white;
 }
 
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 820px) {
     .page {
-        width: 680px;
+        width: 820px;
         margin: 0 auto;
         margin-top: 25px;
         padding-top: 25px;
@@ -34,9 +37,9 @@ li {
 }
 
 a,a:visited {
-    /* color: #6684E1; */
-    /* font-weight: bold; */
-    color: blue;
+    color: #6684E1;
+    font-weight: bold;
+    /* color: blue; */
     text-decoration: none;
 }
 
