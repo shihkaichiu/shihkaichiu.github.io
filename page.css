@@ -1,0 +1,46 @@
+@viewport {
+    width: device-width;
+    initial-scale: 1.0;
+}
+
+body {
+    /* background-color: rgb(237, 206, 171); */
+    background-color: rgb(250, 224, 180)
+}
+
+.page {
+    margin: 5% 3% 3%;
+    padding: 15px 15px 15px;
+    background: white;
+}
+
+@media screen and (min-width: 690px) {
+    .page {
+        width: 680px;
+        margin: 0 auto;
+        margin-top: 25px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.q {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+li {
+    margin-bottom:5px;
+}
+
+a,a:visited {
+    /* color: #6684E1; */
+    /* font-weight: bold; */
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    background: blue;
+    color: white;
+}
