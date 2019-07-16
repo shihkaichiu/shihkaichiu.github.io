@@ -7,7 +7,7 @@ body {
     /* background-color: rgb(237, 206, 171); */
     background-color: rgb(250, 224, 180);
     /* background-color: rgb(195, 247, 210); */
-    line-height: 1.5em;
+    line-height: 1.8em;
     font-family: "Helvetica";
 }
 
@@ -21,7 +21,7 @@ body {
 @media screen and (min-width: 820px) {
     body {
         /* background: #DBF3FA; */
-        background: grey;
+        background: white;
     }
     .page {
         width: 690px;
