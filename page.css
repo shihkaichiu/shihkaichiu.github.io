@@ -52,8 +52,8 @@ a,a:visited {
 }
 
 a:hover {
-    background: blue;
-    color: white;
+    background: #6684E1;
+    color: rgb(237, 242, 250);
 }
 
 h1 {
