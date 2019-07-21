@@ -4,11 +4,8 @@
 }
 
 body {
-    /* background-color: rgb(237, 206, 171); */
-    /* background-color: rgb(250, 224, 180); */
-    /* background-color: rgb(195, 247, 210); */
     line-height: 1.8em;
-    font-family: "Helvetica";
+    font-family: helvetica, sans-serif;
     color: rgb(58, 74, 79);
 }
 
@@ -16,14 +13,9 @@ body {
     margin: 5% 3% 3%;
     margin-bottom: 5%;
     padding: 15px 15px 15px;
-    /* background: white; */
 }
 
 @media screen and (min-width: 820px) {
-    body {
-        /* background: #DBF3FA; */
-        /* background: white; */
-    }
     .page {
         width: 690px;
         margin: 0 auto;
@@ -57,6 +49,7 @@ a:hover {
 }
 
 h1 {
+    font-size: 240%;
     color: rgb(24, 60, 71);
     color: rgb(28, 114, 140);
 }
@@ -74,3 +67,7 @@ h3 {
     margin-bottom: 1px;
 }
 
+.abstract {
+    color: rgb(98, 124, 133);
+    color: rgb(102, 119, 125);
+}
