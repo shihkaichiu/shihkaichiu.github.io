@@ -4,10 +4,12 @@
 }
 
 body {
-    line-height: 1.8em;
-    font-family: monospace;
-    font-size: 16px;
+    line-height: 1.7em;
+    font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif, 'Hiragino Kaku Gothic Pro', 'WenQuanYi Zen Hei', '微軟正黑體', '蘋果儷中黑', Helvetica, Arial, sans-serif;
+    font-size: 18px;
     color: rgb(58, 74, 79);
+    /* color: #c0c0fa; */
+    /* background: #090921; */
 }
 
 .page {
@@ -23,7 +25,7 @@ body {
         /* margin-top: 20px; */
         margin-bottom: 20px;
         padding-top: 10px;
-        padding-bottom: 25px;
+        padding-bottom: 75px;
         /* padding: 40px 40px 40px; */
     }
 }
@@ -39,9 +41,10 @@ li {
 
 a,a:visited {
     color: #6684E1;
-    font-weight: bold;
+    /* font-weight: bold; */
     /* color: blue; */
     text-decoration: none;
+    color: rgb(28, 114, 140);
 }
 
 a:hover {
@@ -52,20 +55,25 @@ a:hover {
 h1 {
     font-size: 240%;
     line-height: 100%;
+    font-weight: normal;
     color: rgb(24, 60, 71);
     /* color: rgb(28, 114, 140); */
     /* color: #06193d; */
+    margin-bottom: 10px
 }
 
 h2 {
-    margin-top: 30px;
-    font-size: 1.3em;
+    /* margin-top: 30px; */
+    font-weight: normal;
+    font-size: 1.4em;
     color: rgb(24, 60, 71);
-    text-decoration: underline;
+    /* color: rgb(28, 114, 140); */
+    /* text-decoration: underline; */
 }
 
 h3 {
     font-size: 1.1em;
+    font-weight: normal;
     color: rgb(24, 60, 71);
     margin-bottom: 1px;
 }
