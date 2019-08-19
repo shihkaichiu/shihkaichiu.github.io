@@ -5,11 +5,11 @@
 
 body {
     line-height: 1.7em;
-    font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif, 'Hiragino Kaku Gothic Pro', 'WenQuanYi Zen Hei', '微軟正黑體', '蘋果儷中黑', Helvetica, Arial, sans-serif;
+    font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
     font-size: 18px;
     color: rgb(58, 74, 79);
     /* color: #c0c0fa; */
-    /* background: #090921; */
+    /* background: #ededed; */
 }
 
 .page {
@@ -40,7 +40,7 @@ li {
 }
 
 a,a:visited {
-    color: #6684E1;
+    /* color: #6684E1; */
     /* font-weight: bold; */
     /* color: blue; */
     text-decoration: none;
@@ -48,7 +48,7 @@ a,a:visited {
 }
 
 a:hover {
-    background: #6684E1;
+    background: rgb(28, 114, 140);
     color: rgb(237, 242, 250);
 }
 
