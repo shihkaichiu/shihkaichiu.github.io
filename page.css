@@ -3,6 +3,10 @@
     initial-scale: 1.0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     line-height: 1.7em;
     font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
