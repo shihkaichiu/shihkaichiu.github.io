@@ -52,11 +52,6 @@ a,a:visited {
     color: rgb(28, 114, 140);
 }
 
-a:hover {
-    background: rgb(28, 114, 140);
-    color: rgb(237, 242, 250);
-}
-
 h1 {
     font-size: 240%;
     line-height: 100%;
