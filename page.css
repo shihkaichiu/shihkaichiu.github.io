@@ -10,7 +10,6 @@ html {
 
 body {
     line-height: 1.7em;
-    font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
     font-size: 18px;
     color: rgb(58, 74, 79);
     /* color: #c0c0fa; */
@@ -25,7 +24,7 @@ body {
 
 @media screen and (min-width: 820px) {
     .page {
-        width: 690px;
+        width: 780px;
         margin: 0 auto;
         /* margin-top: 20px; */
         margin-bottom: 20px;
