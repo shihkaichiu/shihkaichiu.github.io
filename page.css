@@ -12,8 +12,9 @@ body {
     line-height: 1.7em;
     font-size: 18px;
     color: rgb(58, 74, 79);
+    font-family: Helvetica, Arial, sans-serif;
     /* color: #c0c0fa; */
-    /* background: #ededed; */
+    /* background: #000000; */
 }
 
 .page {
@@ -55,7 +56,8 @@ h1 {
     font-size: 240%;
     line-height: 100%;
     font-weight: normal;
-    color: rgb(24, 60, 71);
+    /* color: rgb(24, 60, 71); */
+    font-family: Georgia, Times new Roman, serif;
     /* color: rgb(28, 114, 140); */
     /* color: #06193d; */
     margin-bottom: 10px
@@ -63,21 +65,23 @@ h1 {
 
 h2 {
     /* margin-top: 30px; */
-    font-weight: normal;
-    font-size: 1.4em;
-    color: rgb(24, 60, 71);
+    font-weight: 400;
+    font-size: 180%;
+    /* color: rgb(24, 60, 71); */
+    font-family: Georgia, Times new Roman, serif;
     /* color: rgb(28, 114, 140); */
     /* text-decoration: underline; */
 }
 
 h3 {
-    font-size: 1.1em;
-    font-weight: normal;
-    color: rgb(24, 60, 71);
+    font-size: 140%;
+    font-weight: 400;
+    font-family: Georgia, Times new Roman, serif;
+    /* color: rgb(24, 60, 71); */
     margin-bottom: 1px;
 }
 
 .abstract {
-    color: rgb(98, 124, 133);
+    /* color: rgb(98, 124, 133); */
     color: rgb(102, 119, 125);
 }
