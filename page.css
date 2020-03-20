@@ -12,15 +12,17 @@ body {
     line-height: 1.5em;
     font-size: 16px;
     color: #283235;
-    font-family: monospace;
+    font-family: helvetica;
     background: #e8fbfc;
+    background: #edf4f7;
 }
 
 .page {
     margin-bottom: 5%;
-    padding: 15px 15px 15px;
-    border: 2px solid #babcb8;
+    /* border: 2px solid #babcb8; */
+    border-style: none;
     background: #fcfcfc;
+    padding: 15px 15px 15px;
 }
 
 .face {
@@ -28,18 +30,20 @@ body {
     margin:5px;
 }
 
+
 @media screen and (min-width: 820px) {
+    .face {
+        float: left;
+        margin-right: 30px;
+    }
     .page {
         width: 780px;
         margin: 0 auto;
         margin-bottom: 20px;
-        padding-top: 20px;
+        padding-top: 10px;
         padding-left: 25px;
         padding-right: 25px;
         padding-bottom: 25px;
-    }
-    .face {
-        float: right;
     }
     .intro {
     height: 220px;
@@ -65,9 +69,12 @@ a,a:visited {
 }
 
 h1 {
+    text-align: center;
     font-size: 240%;
     line-height: 100%;
-    color: rgb(24, 60, 71);
+    /* color: rgb(24, 60, 71); */
+    /* color: white; */
+    padding-bottom: 20px;
     margin-bottom: 10px;
 }
 
