@@ -23,6 +23,7 @@ body {
     border-style: none;
     background: #fcfcfc;
     padding: 15px 15px 15px;
+    text-align: justify;
 }
 
 .face {
@@ -31,11 +32,18 @@ body {
 }
 
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 600px) {
     .face {
-        float: left;
-        margin-right: 30px;
+        float: right;
+        margin-left: 50px;
     }
+    .intro {
+        height: 220px;
+    }
+
+}
+
+@media screen and (min-width: 820px) {
     .page {
         width: 780px;
         margin: 0 auto;
@@ -44,9 +52,6 @@ body {
         padding-left: 25px;
         padding-right: 25px;
         padding-bottom: 25px;
-    }
-    .intro {
-    height: 220px;
     }
 }
 
