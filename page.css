@@ -16,6 +16,7 @@ body {
     background: #e8fbfc;
     background: #edf4f7;
     text-size-adjust: none;
+    -webkit-text-size-adjust: 100%;
 }
 
 .page {
