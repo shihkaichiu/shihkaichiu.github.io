@@ -12,9 +12,7 @@ body {
     line-height: 1.5em;
     font-size: 16px;
     color: #283235;
-    font-family: helvetica;
-    background: #e8fbfc;
-    background: #edf4f7;
+    font-family: Helvetica;
     text-size-adjust: none;
     -webkit-text-size-adjust: 100%;
 }
@@ -23,7 +21,7 @@ body {
     margin-bottom: 5%;
     /* border: 2px solid #babcb8; */
     border-style: none;
-    background: #fcfcfc;
+    background: #fcfbfa;
     padding: 15px 15px 15px;
     text-align: justify;
 }
@@ -41,6 +39,9 @@ body {
     }
     .intro {
         height: 220px;
+    }
+    h1 {
+        text-align: center;
     }
 
 }
@@ -72,15 +73,16 @@ li {
 
 a,a:visited {
     text-decoration: none;
-    color: #0a61bf;
+    color: #6e6a67;
+}
+
+a:hover {
+    background: white;
 }
 
 h1 {
-    text-align: center;
     font-size: 240%;
     line-height: 100%;
-    /* color: rgb(24, 60, 71); */
-    /* color: white; */
     padding-bottom: 20px;
     margin-bottom: 10px;
 }
