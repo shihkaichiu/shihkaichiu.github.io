@@ -24,6 +24,9 @@ body {
     border-style: none;
     /* background: #fcfbfa; */
     padding: 15px 15px 15px;
+}
+
+p {
     text-align: justify;
 }
 
@@ -49,7 +52,7 @@ body {
 
 @media screen and (min-width: 820px) {
     .page {
-        width: 780px;
+        width: 700px;
         margin: 0 auto;
         margin-bottom: 20px;
         padding-top: 10px;
@@ -78,7 +81,9 @@ a,a:visited {
 }
 
 a:hover {
-    background: white;
+    background: #fcd349;
+    background: #fcdd8d;
+    font-size: 102%;
 }
 
 h1 {
@@ -86,19 +91,23 @@ h1 {
     line-height: 100%;
     padding-bottom: 20px;
     margin-bottom: 10px;
+    color: #6e6a67;
 }
 
 h2 {
     font-size: 180%;
     color: rgb(24, 60, 71);
+    color: #6e6a67;
 }
 
 h3 {
     font-size: 140%;
     color: rgb(24, 60, 71);
     margin-bottom: 1px;
+    color: #6e6a67;
 }
 
 .abstract {
     color: rgb(102, 119, 125);
 }
+

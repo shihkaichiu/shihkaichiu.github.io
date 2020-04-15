@@ -9,3 +9,13 @@ function toggleDisplay(x) {
 function backTop() {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
+
+function toggleFace(x) {
+    var src = x.src.replace(/^.*[\\\/\/]/, '');
+    if (src == "face-art.png") {
+        x.src = "face.png";
+    }
+    else {
+        x.src = "face-art.png";
+    }
+}
