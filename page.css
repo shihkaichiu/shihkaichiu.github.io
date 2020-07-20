@@ -10,12 +10,13 @@ html {
 
 body {
     line-height: 24px;
+    line-height: 26px;
     font-size: 16px;
-    color: #283235;
+    /* color: #283235; */
     font-family: Helvetica;
     text-size-adjust: none;
     -webkit-text-size-adjust: 100%;
-    background-image: url(noise.png);
+    /* background-image: url(noise.png); */
 }
 
 .page {
@@ -50,7 +51,7 @@ p.desc::first-letter{
         margin-left: 50px;
     }
     .intro {
-        height: 220px;
+        /* height: 220px; */
     }
     h1 {
         text-align: center;
@@ -100,8 +101,10 @@ h1 {
     font-size: 240%;
     line-height: 100%;
     padding-bottom: 20px;
-    margin-bottom: 10px;
-    color: #6e6a67;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-family: Courier;
+    /* color: #6e6a67; */
 }
 
 h2 {
