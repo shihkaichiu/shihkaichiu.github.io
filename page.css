@@ -54,7 +54,7 @@ p.desc::first-letter{
 
 @media screen and (min-width: 1024px) {
     .page {
-        width: 1000px;
+        width: 960px;
         margin: 0 auto;
         margin-bottom: 20px;
         padding-top: 10px;
