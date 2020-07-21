@@ -80,12 +80,11 @@ a,a:visited {
 }
 
 a:hover {
-    background: #fcd349;
     background: gray;
     color: white;
     border-radius: 5px;
-    padding: 2px;
-    font-size: 96%;
+    padding: 1px;
+    font-size: 99%;
 }
 
 h1 {
