@@ -91,10 +91,11 @@ a,a:visited {
 
 a:hover {
     background: #fcd349;
-    background: #fcdd8d;
+    background: gray;
+    color: white;
     border-radius: 5px;
     padding: 2px;
-    font-size: 102%;
+    font-size: 96%;
 }
 
 h1 {
@@ -122,5 +123,6 @@ h3 {
 
 .abstract {
     color: rgb(102, 119, 125);
+    text-align: justify;
 }
 
