@@ -12,18 +12,14 @@ body {
     line-height: 24px;
     line-height: 26px;
     font-size: 16px;
-    /* color: #283235; */
     font-family: Helvetica;
     text-size-adjust: none;
     -webkit-text-size-adjust: 100%;
-    /* background-image: url(noise.png); */
 }
 
 .page {
     margin-bottom: 5%;
-    /* border: 2px solid #babcb8; */
     border-style: none;
-    /* background: #fcfbfa; */
     padding: 15px 15px 15px;
 }
 
@@ -50,18 +46,15 @@ p.desc::first-letter{
         float: right;
         margin-left: 50px;
     }
-    .intro {
-        /* height: 220px; */
-    }
     h1 {
         text-align: center;
     }
 
 }
 
-@media screen and (min-width: 820px) {
+@media screen and (min-width: 1024px) {
     .page {
-        width: 700px;
+        width: 1000px;
         margin: 0 auto;
         margin-bottom: 20px;
         padding-top: 10px;
@@ -71,9 +64,6 @@ p.desc::first-letter{
     }
 }
 
-hr {
-    color: #babcb8;
-}
 
 .q {
     text-decoration: underline;
@@ -105,7 +95,6 @@ h1 {
     margin-bottom: 30px;
     margin-top: 40px;
     font-family: Courier;
-    /* color: #6e6a67; */
 }
 
 h2 {
