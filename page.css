@@ -54,7 +54,7 @@ p.desc::first-letter{
 
 @media screen and (min-width: 1024px) {
     .page {
-        width: 960px;
+        width: 720px;
         margin: 0 auto;
         margin-bottom: 20px;
         padding-top: 10px;
@@ -76,22 +76,18 @@ li {
 
 a,a:visited {
     text-decoration: none;
-    color: #6e6a67;
+    color: #0a78fc;
 }
 
 a:hover {
-    background: gray;
-    color: white;
-    border-radius: 5px;
-    padding: 1px;
-    font-size: 99%;
+    text-decoration: underline;
 }
 
 h1 {
     font-size: 240%;
     line-height: 100%;
     padding-bottom: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-top: 40px;
     font-family: Courier;
 }
