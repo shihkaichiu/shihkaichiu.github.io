@@ -19,3 +19,21 @@ function toggleFace(x) {
         x.src = "face-art.png";
     }
 }
+
+
+function toggleInvert() {
+    btn = document.getElementById("darkModeButton");
+
+    if (btn.innerHTML == "Dark mode") {
+        document.body.classList.add("dark");
+        document.querySelectorAll("a").forEach(l => l.classList.add("dark"));
+    }
+    else {
+        var elements = document.getElementsByClassName('dark');
+        while(elements.length > 0){
+            elements[0].classList.remove('dark');
+        }
+    }
+
+    btn.innerHTML = (btn.innerHTML == "Dark mode") ? "Light mode" : "Dark mode";
+}
