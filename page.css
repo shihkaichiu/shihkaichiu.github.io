@@ -10,13 +10,13 @@ html {
 
 body {
     line-height: 24px;
-    line-height: 26px;
-    font-size: 16px;
-    font-family: Helvetica;
+    line-height: 28px;
+    font-size: 18px;
+    font-family: Charter, Helvetica;
     text-size-adjust: none;
     -webkit-text-size-adjust: 100%;
     /* background: #d2eefc; */
-    Background: #d9f1fc;
+    /* background: #e3f5fc; */
 }
 
 .page {
@@ -38,8 +38,8 @@ p.desc::first-letter{
 }
 
 .face {
-    border-radius:10px;
-    margin:5px;
+    border-radius: 10px;
+    margin: 5px;
 }
 
 @media screen and (min-width: 600px) {
@@ -57,7 +57,7 @@ p.desc::first-letter{
 
 @media screen and (min-width: 1024px) {
     .page {
-        width: 720px;
+        width: 860px;
         margin: 0 auto;
         margin-bottom: 20px;
         padding-top: 10px;
@@ -78,8 +78,6 @@ li {
 
 a,a:visited {
     text-decoration: none;
-    color: #0a78fc;
-    color: #085e9c;
     color: #0782db;
 }
 
@@ -93,7 +91,7 @@ h1 {
     padding-bottom: 20px;
     margin-bottom: 20px;
     margin-top: 40px;
-    font-family: Courier;
+    font-family: CooperHewittBold;
 }
 
 h2 {
