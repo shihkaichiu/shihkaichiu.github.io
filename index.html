@@ -17,127 +17,137 @@
 
   </head>
   <body>
-
-
     <div class="page">
 
       <h1>Shih-Kai Chiu</h1>
       
       <div class="intro">
         <img src="shihkai.png" class="face" height="300">
-        <p class="desc">My name is Shih-Kai Chiu (邱詩凱). I am a
-          Postdoctoral Research Associate in Special Holonomy at
-          the <a href="https://www.maths.ox.ac.uk/">University of
-          Oxford</a>, where my mentor
-          is <a href="http://people.maths.ox.ac.uk/lotay/">Jason
-          Lotay</a>. I obtained my PhD in mathematics in August 2021
-          from the <a href="https://math.nd.edu">University of Notre
-          Dame</a>, under the supervision
-          of <a href="https://www3.nd.edu/~gszekely">Gábor
-          Székelyhidi</a>. I am interested in geometric analysis and
-          complex differential geometry, as well as related areas.</p>
-        <p>Write me
-        an <a href="mailto:shihkaichiu@gmail.com">email</a>.</p>
+          <p class="desc">
+            My name is Shih-Kai Chiu (邱詩凱). I am a Postdoctoral
+            Research Associate in Special Holonomy at
+            the <a href="https://www.maths.ox.ac.uk/">University of
+              Oxford</a>, where my mentor
+            is <a href="http://people.maths.ox.ac.uk/lotay/">Jason
+              Lotay</a>. I obtained my PhD in mathematics in August 2021
+            from the <a href="https://math.nd.edu">University of Notre
+              Dame</a>, under the supervision
+            of <a href="https://www3.nd.edu/~gszekely">Gábor
+              Székelyhidi</a>. I am interested in geometric analysis and
+            complex differential geometry, as well as related areas.
+          </p>
 
-        <p>
-          <a href="https://www.maths.ox.ac.uk/events/list/641">Oxford
-        Geometry and Analysis Seminar</a> (co-organized
-        with <a href="http://people.maths.ox.ac.uk/cazassus/">Guillem
-        Cazassus</a>, <a href="https://www.maths.ox.ac.uk/people/ilyas.khan">Ilyas
-        Khan</a>
-        and <a href="https://people.maths.ox.ac.uk/liu/">Henry
-        Liu</a>)
-        </p>
-
-        <p><a href="https://hackmd.io/@sgws/Fall2020">Student Seminar (Notre Dame) Fall 2020</a></p>
-
-        <p><a href="javascript:;" id="darkModeButton" onclick="toggleInvert()">Dark mode</a></p>
+          <p>Write me
+            an <a href="mailto:shihkaichiu@gmail.com">email</a>. <a href="javascript:;" id="darkModeButton"
+                                                                    onclick="toggleInvert()">Dark mode</a>.</p>
+          
+          <ul>
+            <li>
+              <a href="https://www.maths.ox.ac.uk/events/list/641">Oxford
+                Geometry and Analysis Seminar</a>
+              <a href="javascript:;" onclick="toggleDisplay('oxfordseminar')">±</a>
+              <div id="oxfordseminar" class="seminar" style="display: none;">
+                Co-organized with <a href="http://people.maths.ox.ac.uk/cazassus/">Guillem
+                  Cazassus</a>, <a href="https://www.maths.ox.ac.uk/people/ilyas.khan">Ilyas
+                  Khan</a> and <a href="https://people.maths.ox.ac.uk/liu/">Henry Liu.</a>
+              </div>
+            </li>
+            <li>
+              <a href="https://hackmd.io/@sgws/Fall2020">Student Seminar (Notre Dame) Fall 2020</a>
+              <a href="javascript:;" onclick="toggleDisplay('ndseminar')">±</a>
+              <div id="ndseminar" class="seminar" style="display: none;">
+                Student seminar held in Fall 2020 with a focus on research.
+              </div>
+          </ul>
       </div>
 
-      <h2>Research</h2>
-      <p>I am currently interested in manifolds with special holonomy
-      and calibrated submanifolds. My main focus is on Calabi-Yau
-      manifolds and special Lagrangian submanifolds.</p>
+                <h2>Research</h2>
+          <p>I am currently interested in manifolds with special holonomy
+            and calibrated submanifolds. My main focus is on Calabi-Yau
+            manifolds and special Lagrangian submanifolds.</p>
 
-      <h3>Papers & preprints</h3>
+          <h3>Papers & preprints</h3>
 
-      <ul>
-        <li><em>Subquadratic harmonic functions on Calabi-Yau manifolds with
-            Euclidean volume
-            growth</em>, <a href="https://arxiv.org/abs/1905.12965">arXiv:1905.12965</a>
-          (2019), submitted. <a href="javascript:;"
-                                onclick="toggleDisplay('subquadratic')">±</a>
-          <div id="subquadratic" class="abstract" style="display: none">
-            ABSTRACT. We prove that on a complete Calabi-Yau manifold \(M\)
-            with Euclidean volume growth, a harmonic function with
-            subquadratic polynomial growth is the real part of a holomorphic
-            function. This generalizes a result of Conlon-Hein. We prove
-            this result by proving a Liouville type theorem for harmonic
-            \(1\)-forms, which follows from a new local \(L^2\) estimate of
-            the differential. We also give another proof based on the
-            construction of harmonic functions with polynomial growth in
-            Ding, and the algebraicity of tangent cones in Liu-Székelyhidi.
-          </div>
-        </li>
-        <li><em>On Calabi-Yau manifolds with maximal volume
-        growth</em>, PhD
-        Thesis, <a href="https://curate.nd.edu/show/gf06g161m8w">CurateND</a>
-        (2021). <a href="javascript:;"
-                                onclick="toggleDisplay('thesis')">±</a>
-          <div id="thesis" class="abstract" style="display:
-          none">ABSTRACT. We study complete noncompact Calabi-Yau
-          manifolds with maximal volume growth. These manifolds arise
-          as desingularizations of affine Calabi-Yau varieties, and as
-          bubbles in the singularity formation of compact
-          Kähler-Einstein manifolds. The rather explicit metric
-          behavior of these manifolds enables us to understand the
-          metric behavior of the seemingly impenetrable compact
-          case. It is therefore of great importance to study the
-          uniqueness/deformation problem of these manifolds and
-          metrics. Our first result is that subquadratic harmonic
-          functions on such manifolds must be pluriharmonic. This
-          should be seen as the linear version of the
-          uniqueness/deformation problem. Next, we show that if a
-          \(\partial\bar\partial\)-exact Calabi-Yau manifold with
-          maximal volume growth has tangent cone at infinity which
-          splits an Euclidean factor, then the metric is unique under
-          subquadratic perturbation of the Kähler
-          potential. Geometrically, this means that the Calabi-Yau
-          metric is rigid under deformations that fix the tangent cone
-          at infinity. It is therefore interesting to know if a
-          quadratic perturbation of the Kähler potential, which should
-          correspond to an automorphism of the tangent cone at
-          infinity, really changes the metric. As a first step toward
-          understanding this picture, we construct new Calabi-Yau
-          metrics on \(\mathbf{C}^3\) with tangent cone at infinity
-          given by \(\mathbf{C} \times A_2\), and we show that these
-          metrics are inequivalent in the sense that they are not
-          related by isometries and scalings. This existence result
-          provides the first example of families of Calabi-Yau metrics
-          with the same tangent cone at infinity while the underlying
-          complex structure is fixed.</div></li>
-      </ul>
+          <ul>
+            <li><em>Subquadratic harmonic functions on Calabi-Yau manifolds with
+                Euclidean volume
+                growth</em>, <a href="https://arxiv.org/abs/1905.12965">arXiv:1905.12965</a>
+              (2019), submitted. <a href="javascript:;"
+                                    onclick="toggleDisplay('subquadratic')">±</a>
+              <div id="subquadratic" class="abstract" style="display: none">
+                ABSTRACT. We prove that on a complete Calabi-Yau manifold \(M\)
+                with Euclidean volume growth, a harmonic function with
+                subquadratic polynomial growth is the real part of a holomorphic
+                function. This generalizes a result of Conlon-Hein. We prove
+                this result by proving a Liouville type theorem for harmonic
+                \(1\)-forms, which follows from a new local \(L^2\) estimate of
+                the differential. We also give another proof based on the
+                construction of harmonic functions with polynomial growth in
+                Ding, and the algebraicity of tangent cones in Liu-Székelyhidi.
+              </div>
+            </li>
+            <li><em>On Calabi-Yau manifolds with maximal volume
+                growth</em>, PhD
+              Thesis, <a href="https://curate.nd.edu/show/gf06g161m8w">Notre Dame</a>
+              (2021). <a href="javascript:;"
+                         onclick="toggleDisplay('thesis')">±</a>
+              <div id="thesis" class="abstract" style="display: none">
+                ABSTRACT. We study complete noncompact Calabi-Yau
+                manifolds with maximal volume growth. These manifolds
+                arise as desingularizations of affine Calabi-Yau
+                varieties, and as bubbles in the singularity formation
+                of compact Kähler-Einstein manifolds. The rather
+                explicit metric behavior of these manifolds enables us
+                to understand the metric behavior of the seemingly
+                impenetrable compact case. It is therefore of great
+                importance to study the uniqueness/deformation problem
+                of these manifolds and metrics. Our first result is
+                that subquadratic harmonic functions on such manifolds
+                must be pluriharmonic. This should be seen as the
+                linear version of the uniqueness/deformation
+                problem. Next, we show that if a
+                \(\partial\bar\partial\)-exact Calabi-Yau manifold
+                with maximal volume growth has tangent cone at
+                infinity which splits an Euclidean factor, then the
+                metric is unique under subquadratic perturbation of
+                the Kähler potential. Geometrically, this means that
+                the Calabi-Yau metric is rigid under deformations that
+                fix the tangent cone at infinity. It is therefore
+                interesting to know if a quadratic perturbation of the
+                Kähler potential, which should correspond to an
+                automorphism of the tangent cone at infinity, really
+                changes the metric. As a first step toward
+                understanding this picture, we construct new
+                Calabi-Yau metrics on \(\mathbf{C}^3\) with tangent
+                cone at infinity given by \(\mathbf{C} \times A_2\),
+                and we show that these metrics are inequivalent in the
+                sense that they are not related by isometries and
+                scalings. This existence result provides the first
+                example of families of Calabi-Yau metrics with the
+                same tangent cone at infinity while the underlying
+                complex structure is fixed.</div></li>
+          </ul>
 
+          <h2>Seminar Talks</h2>
+          <ul>
+            <li>Geometry and Analysis Seminar, Oxford, 11/2021</li>
+            <li>Differential Geometry Seminar, NCTS, Taipei, 08/2021</li>
+            <li>Geometric Analysis Seminar, Notre Dame, 11/2020</li>
+            <li>Oberseminar Differentialgeometrie, Münster, 07/2020</li>
+            <li><a href="https://bsantoro.ccny.cuny.edu/GCSeminar.html">Geometric
+                Analysis Seminar</a>, CUNY, 06/2020 (See seminar page for video)</li>
+            <li>Differential Geometry Seminar, NCTS, Taipei, 06/2019</li>
+            <li>Geometric Analysis Seminar, Notre Dame, 04/2019</li>
+          </ul>
+          <h2>Teaching</h2>
+          <ul>
+            <li><span class="q" title="Calculus II">MATH 10560</span>, Spring 2021, Teaching Assistant</li>
+            <li><span class="q" title="Calculus I">MATH 10550</span>, Fall 2019, Instructor</li>
+            <li><span class="q" title="Calculus A">MATH 10350</span>, Fall 2018, Teaching Assistant</li>
+            <li><span class="q" title="Introduction to Linear Algebra and Differential Equations">MATH 20580</span>, Spring 2018, Teaching Assistant</li>
+            <li><span class="q" title="Calculus I">MATH 10550</span>, Fall 2017, Teaching Assistant</li>
+          </ul>
 
-      
-      <h2>Seminar Talks</h2>
-      <ul>
-        <li>Geometry and Analysis Seminar, Oxford, 11/2021</li>
-        <li>Differential Geometry Seminar, NCTS, Taipei, 08/2021</li>
-        <li>Geometric Analysis Seminar, Notre Dame, 11/2020</li>
-        <li>Oberseminar Differentialgeometrie, Münster, 07/2020</li>
-        <li><a href="https://bsantoro.ccny.cuny.edu/GCSeminar.html">Geometric
-        Analysis Seminar</a>, CUNY, 06/2020 (See seminar page for video)</li>
-        <li>Differential Geometry Seminar, NCTS, Taipei, 06/2019</li>
-        <li>Geometric Analysis Seminar, Notre Dame, 04/2019</li>
-      </ul>
-      <h2>Teaching</h2>
-      <ul>
-        <li><span class="q" title="Calculus II">MATH 10560</span>, Spring 2021, Teaching Assistant</li>
-        <li><span class="q" title="Calculus I">MATH 10550</span>, Fall 2019, Instructor</li>
-        <li><span class="q" title="Calculus A">MATH 10350</span>, Fall 2018, Teaching Assistant</li>
-        <li><span class="q" title="Introduction to Linear Algebra and Differential Equations">MATH 20580</span>, Spring 2018, Teaching Assistant</li>
-        <li><span class="q" title="Calculus I">MATH 10550</span>, Fall 2017, Teaching Assistant</li>
-      </ul>
+      </div>      
   </body>
 </html>

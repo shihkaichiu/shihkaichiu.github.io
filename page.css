@@ -92,7 +92,11 @@ h1 {
     margin-bottom: 20px;
     margin-top: 40px;
     font-family: CooperHewittBold;
-    color: gray;
+    color: #6e6a67;
+}
+
+h1.dark {
+    color: white;
 }
 
 h2 {
@@ -111,14 +115,15 @@ h3 {
     /* text-align: justify; */
 }
 
+.seminar {
+    color: rgb(102, 119, 125);
+}
+
 .page {
     margin-bottom: 5%;
     border-style: none;
     padding: 15px 15px 15px;
 }
-
-
-
 
 
 body.dark {
@@ -128,6 +133,7 @@ body.dark {
 
 a.dark, a:visited.dark {
     color: #f87d24;
+    color: #03c2fc;
 }
 
 h2.dark {
@@ -136,4 +142,30 @@ h2.dark {
 
 h3.dark {
     color: #919598;
+}
+
+
+@media (prefers-color-scheme: dark) {    
+    body {
+        background: black;
+        color: #f2edeb;
+    }
+
+    h1.light {
+        color: black;
+    }
+    a, a:visited {
+        color: #f87d24;
+        color: #03c2fc;
+    }
+
+    body.light {
+        background: white;
+        color: black;
+    }
+    
+    a.light,a:visited.light {
+    text-decoration: none;
+    color: #0782db;
+    }
 }
