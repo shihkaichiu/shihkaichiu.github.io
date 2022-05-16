@@ -92,7 +92,7 @@ h1 {
     margin-bottom: 20px;
     margin-top: 40px;
     font-family: CooperHewittBold;
-    color: #6e6a67;
+    /* color: #6e6a67; */
 }
 
 h1.dark {
@@ -101,7 +101,7 @@ h1.dark {
 
 h2 {
     font-size: 180%;
-    color: #6e6a67;
+    /* color: #6e6a67; */
 }
 
 h3 {
