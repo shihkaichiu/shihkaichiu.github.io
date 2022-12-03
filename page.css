@@ -16,7 +16,7 @@ body {
     text-size-adjust: none;
     -webkit-text-size-adjust: 100%;
     /* background: #d2eefc; */
-    /* background: #e3f5fc; */
+    background: #e3f5fc;
 }
 
 .page {
@@ -148,7 +148,8 @@ h3.dark {
 @media (prefers-color-scheme: dark) {    
     body {
         background: black;
-        color: #f2edeb;
+        /* color: #f2edeb; */
+        color: #aaaaaa;
     }
 
     h1.light {
@@ -156,7 +157,7 @@ h3.dark {
     }
     a, a:visited {
         color: #f87d24;
-        color: #03c2fc;
+        /* color: #03c2fc; */
     }
 
     body.light {
