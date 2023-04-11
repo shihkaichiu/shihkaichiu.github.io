@@ -40,7 +40,8 @@ p.desc::first-letter{
 }
 
 .face {
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-radius: 8px;
     margin: 5px;
 }
 
@@ -158,8 +159,9 @@ h3.dark {
         color: black;
     }
     a, a:visited {
-        color: #f87d24;
+        /* color: #f87d24; */
         /* color: #03c2fc; */
+        color: #0782db;
     }
 
     body.light {
