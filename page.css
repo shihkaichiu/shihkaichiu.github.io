@@ -89,7 +89,7 @@ a:hover {
 }
 
 h1 {
-    font-size: 240%;
+    font-size: 200%;
     line-height: 100%;
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -103,12 +103,12 @@ h1.dark {
 }
 
 h2 {
-    font-size: 180%;
+    font-size: 140%;
     /* color: #6e6a67; */
 }
 
 h3 {
-    font-size: 140%;
+    font-size: 120%;
     margin-bottom: 1px;
     color: #6e6a67;
 }
