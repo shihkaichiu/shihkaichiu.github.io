@@ -18,7 +18,9 @@ body {
     text-size-adjust: none;
     -webkit-text-size-adjust: 100%;
     /* background: #d2eefc; */
-    background: #e3f5fc;
+    /* background: #e3f5fc; */
+    background: #F6F7F8;
+    color: #1C1C1C;
 }
 
 .page {
@@ -31,13 +33,13 @@ p {
     hyphens: auto;
 }
 
-p.desc::first-letter{
-    float: left;
-    font-size: 48px;
-    line-height: 48px;
-    padding-right: 5px;
-    color: #6e6a67;
-}
+/* p.desc::first-letter{ */
+/*     float: left; */
+/*     font-size: 48px; */
+/*     line-height: 48px; */
+/*     padding-right: 5px; */
+/*     color: #6e6a67; */
+/* } */
 
 .face {
     /* border-radius: 10px; */
@@ -82,6 +84,10 @@ li {
 a,a:visited {
     text-decoration: none;
     color: #0782db;
+    color: #2EA9DF;
+    color: #787D7B;
+    color: #C0C0C0;
+    color: #656765;
 }
 
 a:hover {
@@ -94,12 +100,6 @@ h1 {
     padding-bottom: 20px;
     margin-bottom: 20px;
     margin-top: 40px;
-    font-family: CooperHewittBold;
-    /* color: #6e6a67; */
-}
-
-h1.dark {
-    color: white;
 }
 
 h2 {
@@ -114,63 +114,22 @@ h3 {
 }
 
 .abstract {
-    color: rgb(102, 119, 125);
-    /* text-align: justify; */
+    /* color: rgb(102, 119, 125); */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: #535953;
+    font-size: 95%;
+    text-align: justify;
 }
 
 .seminar {
     color: rgb(102, 119, 125);
+    margin: 10px;
 }
 
 .page {
     margin-bottom: 5%;
     border-style: none;
     padding: 15px 15px 15px;
-}
-
-
-body.dark {
-    background: black;
-    color: #f2edeb;
-}
-
-a.dark, a:visited.dark {
-    color: #f87d24;
-    color: #03c2fc;
-}
-
-h2.dark {
-    color: #919598;
-}
-
-h3.dark {
-    color: #919598;
-}
-
-
-@media (prefers-color-scheme: dark) {    
-    body {
-        background: black;
-        /* color: #f2edeb; */
-        color: #aaaaaa;
-    }
-
-    h1.light {
-        color: black;
-    }
-    a, a:visited {
-        /* color: #f87d24; */
-        /* color: #03c2fc; */
-        color: #0782db;
-    }
-
-    body.light {
-        background: white;
-        color: black;
-    }
-    
-    a.light,a:visited.light {
-    text-decoration: none;
-    color: #0782db;
-    }
 }
