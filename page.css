@@ -12,9 +12,8 @@ html {
 
 body {
     line-height: 24px;
-    line-height: 28px;
     font-size: 18px;
-    font-family: Charter, Helvetica;
+
     text-size-adjust: none;
     -webkit-text-size-adjust: 100%;
     /* background: #d2eefc; */
@@ -90,7 +89,9 @@ li {
 
 a,a:visited {
     text-decoration: none;
-    color: #656765;
+    /* color: #656765; */
+    color: blue;
+    color: #005CAF;
 }
 
 a:hover {
@@ -98,21 +99,20 @@ a:hover {
 }
 
 h1 {
-    font-size: 200%;
+    font-size: 180%;
     line-height: 100%;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    /* padding-bottom: 20px; */
+    /* margin-bottom: 20px; */
+    /* margin-top: 40px; */
     text-align: center;
 }
 
 h2 {
-    font-size: 140%;
-    /* color: #6e6a67; */
+    font-size: 120%;
 }
 
 h3 {
-    font-size: 120%;
+    font-size: 110%;
     margin-bottom: 1px;
     color: #6e6a67;
 }
