@@ -1,111 +1,394 @@
 <!DOCTYPE html>
-<html ontouchmove>
+<html lang="en">
   <head>
-    <title>Shih-Kai Chiu: Homepage</title>
-    <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    
-    <meta name="viewport" content="width=device-width,
-    initial-scale=1.0, viewport-fit=cover" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="theme-color" content="#e3f5fc" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
-    <meta name="format-detection" content="telephone=no" />
-    <link rel="stylesheet" type="text/css" href="page.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script type="text/javascript" async
-            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-    <script type="text/javascript" src="./page.js"></script>
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML"></script>
 
-  </head>
-  <body>
-    <div class="page">
-
-      <h1>Shih-Kai Chiu</h1>
+    <title>Shih-Kai Chiu homepage</title>
+    
+    <style>
+      html {
+          scroll-behavior: smooth;
+      }
       
-      <div class="intro">
-        <img src="shihkai.jpg" class="face" height="300">
-        <p class="desc">
-          Since Winter 2025, I am a Visiting Assistant Professor
-          at <a href="https://www.math.uci.edu/">University of
-          California, Irvine</a>, where my mentor
-          is <a href="https://www.math.uci.edu/~xiangwen/">Xiangwen
-          Zhang</a>. During Fall 2024, I was a Postdoc SLMath at
-          the <a href="https://www.slmath.org/">Simons Laufer
-          Mathematical Sciences Institute</a> (formerly MSRI) under
-          the
-          program <a href="https://www.slmath.org/programs/361">Special
-          Geometric Structures and Analysis</a>, where my mentor was
-          <a href="https://scholars.duke.edu/person/Mark.Haskins">Mark
-          Haskins</a>.</p>
-        <p class="desc">
-          During the academic year 2023-2024, I was a Postdoctoral
-          Scholar
-          at <a href="https://as.vanderbilt.edu/math/">Vanderbilt
-          University</a> working
-          with <a href="https://math.vanderbilt.edu/suvaini/">Ioana
-          Suvaina</a>. During the academic years 2021-2023, I was a
-          Postdoctoral Research Associate in Special Holonomy at
-          the <a href="https://www.maths.ox.ac.uk/">University of
-          Oxford</a>, where my mentor
-          was <a href="https://people.maths.ox.ac.uk/lotay/">Jason D.
-            Lotay</a>.</p>
-        <p class="desc">I obtained my PhD in Mathematics in August 2021
-          from the <a href="https://math.nd.edu">University of Notre
-          Dame</a>, under the supervision
-          of <a href="https://gszekelyhidi.github.io/">Gábor
-          Székelyhidi</a>. I am interested in geometric analysis and
-          complex differential geometry, as well as related areas.
-        </p>
+      body {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+          line-height: 1.6;
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 2em;
+          color: #333;
+      }
 
-        <p><b>Email</b>: 
-          <a href="mailto:shihkaic@uci.edu">shihkaic@uci.edu</a>
-        </p>
+      header {
+          text-align: center;
+          margin-bottom: 2em;
+      }
 
-        <ul>
-          <li>
-            <a href="https://events.dimai.unifi.it/tacos/">Geometry and TACoS</a>
-          </li>
-          <li>
-            <a href="https://www.maths.ox.ac.uk/events/list/641">Oxford
-              Geometry and Analysis Seminar</a>
-            <a href="javascript:;" onclick="toggleDisplay('oxfordseminar')">±</a>
-            <div id="oxfordseminar" class="seminar" style="display: none;">
-              Michaelmas 2021 - Trinity 2023. Co-organized with
-                Guillem Cazassus</a>, Ilyas Khan, and Henry Liu.
-            </div>
-          </li>
-          <li>
-            <a href="https://hackmd.io/@sgws/Fall2020">Student Seminar (Notre Dame) Fall 2020</a>
-            <a href="javascript:;" onclick="toggleDisplay('ndseminar')">±</a>
-            <div id="ndseminar" class="seminar" style="display: none;">
-              Student geometry seminar held in Fall 2020 with a
-              focus on talking about our own research.
-            </div>
-        </ul>
+      h1 {
+          font-size: 2.5em;
+          letter-spacing: 0.5px;
+          color: #003262; /* UCI dark blue */
+          margin: 0 0 0.4em;
+          margin-top: 1em;
+      }
+
+      nav a {
+          margin: 0 1em;
+          color: #0064A4; /* UCI light blue */
+          text-decoration: none;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 0.95em;
+          letter-spacing: 0.5px;
+      }
+
+      nav a:hover {
+          color: #004B87;
+      }
+
+      
+      footer {
+          text-align: center;
+          margin-top: 4em;
+          font-size: 0.85em;
+          color: #666;
+      }
+      
+      footer a {
+          color: #0064A4;
+          text-decoration: none;
+      }
+
+      footer a:hover {
+          text-decoration: underline;
+      }
+
+      li {
+          margin-bottom: 5px;
+      }
+
+      hr {
+          border: none;
+          border-top: 1px solid #0064A4;
+          margin: 2em 0;
+          opacity: 0.3;
+      }
+
+      
+      a {
+          color: #0064A4;
+          text-decoration: none;
+      }
+
+      a:hover {
+          text-decoration: underline;
+      }
+
+      
+      .contact-info {
+          display: flex;
+          align-items: flex-start;
+          gap: 1.5em;
+          background: #f8f8f8;
+          padding: 1em 1.5em;
+          margin-bottom: 2em;
+          flex-wrap: wrap;
+      }
+
+      .contact-info img {
+          max-width: 180px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          flex-shrink: 0;
+      }
+
+      .contact-text {
+          flex: 1;
+          min-width: 200px;
+      }
+
+      .contact-text p {
+          margin: 0.3em 0;
+      }
+
+      .abstract {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          margin-left: 10px;
+          color: #535953;
+          font-size: 95%;
+      }
+
+      .seminar {
+          color: #535953;
+      }
+
+      @media (max-width: 600px) {
+          h1 {
+              font-size: 2em;
+          }
+          .contact-info {
+              flex-direction: column;
+              align-items: flex-start;
+          }
+      }
+
+      h2 {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      .back-to-top-link {
+          font-size: 0.8em;
+          color: #0064A4;
+          text-decoration: none;
+      }
+
+      summary {
+          cursor: pointer;
+          font-weight: 500;
+          color: #0064A4;
+          text-decoration: underline;
+          padding: 0.2em 0;
+      }
+
+      summary:hover {
+          color: #004B87;
+      }
+    </style>
+  </head>
+
+  <body id="top">
+    <header>
+      <h1>Shih-Kai Chiu</h1>
+      <nav>
+        <a href="#bio">Bio</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#talks">Talks</a>
+        <a href="#activities">Activities</a>
+      </nav>
+    </header>
+
+    <div class="contact-info">
+      <img src="shihkai.jpg" alt="Shih-Kai Chiu photo" />
+      <div class="contact-text">
+        <p><strong>Visiting Assistant Professor</strong></p>
+        <p>University of California, Irvine</p>
+        <p>Department of Mathematics</p>
+        <p>340 Rowland Hall</p>
+        <p>Irvine, CA 92697-3875</p>
+        <p>Office: 410P</p>
+        <p>Email: <a href="mailto:shihkaic@uci.edu">shihkaic@uci.edu</a></p>
       </div>
+    </div>
 
-      <h2>Teaching</h2>
+    <section id="bio">
+      <h2>Brief Bio <a href="#top" class="back-to-top-link">↑</a></h2>
+
+      <p>
+        Since Winter 2025, I have been a Visiting Assistant Professor
+        at <a href="https://www.math.uci.edu/">University of
+        California, Irvine</a>, where my mentor
+        is <a href="https://www.math.uci.edu/~xiangwen/">Xiangwen
+        Zhang</a>. During Fall 2024, I was a Postdoc at
+        the <a href="https://www.slmath.org/">SLMath</a> (formerly
+        MSRI) under the
+        program <a href="https://www.slmath.org/programs/361">Special
+        Geometric Structures and Analysis</a>, where my mentor was
+        <a href="https://scholars.duke.edu/person/Mark.Haskins">Mark
+          Haskins</a>.
+      </p>
+
+      <p>
+        In the academic year 2023–2024, I was a Postdoctoral Scholar
+        at <a href="https://as.vanderbilt.edu/math/">Vanderbilt
+        University</a>, mentored by
+        <a href="https://math.vanderbilt.edu/suvaini/">Ioana
+          Suvaina</a>. From 2021 to 2023, I was a
+        Postdoctoral Research Associate in Special Holonomy at
+        the <a href="https://www.maths.ox.ac.uk/">University of
+          Oxford</a>, where my mentor
+        was <a href="https://people.maths.ox.ac.uk/lotay/">Jason D.
+          Lotay</a>.
+      </p>
+        
+      <p>
+        I received my PhD in Mathematics in August 2021 from
+        the <a href="https://math.nd.edu">University of Notre
+        Dame</a>, under the supervision
+        of <a href="https://gszekelyhidi.github.io/">Gábor
+        Székelyhidi</a>. I am interested in geometric analysis and
+        complex differential geometry, as well as related areas.
+      </p>      
+    </section>
+
+    <hr>
+    
+    <section id="research">
+      <h2>Research <a href="#top" class="back-to-top-link">↑</a></h2>
+
+      <p>
+        My research interests lie in Kähler geometry, manifolds with
+        special holonomy, and calibrated geometry, with a particular
+        focus on Calabi–Yau manifolds and special Lagrangian
+        submanifolds.
+      </p>
+
+      <p>
+        Calabi–Yau manifolds play a central role in both mathematics
+        and physics. Many important phenomena were first observed in
+        this setting before generalizing more broadly. I have worked
+        on existence and classification results for singular
+        Kähler–Einstein metrics and Calabi-Yau metrics with maximal
+        volume growth.
+      </p>
+
+      <p>
+        Special Lagrangian submanifolds are half-dimensional,
+        volume-minimizing Lagrangian submanifolds in Calabi–Yau
+        manifolds. In string theory, they arise as boundary conditions
+        for open strings, and counting them is expected to yield
+        invariants of the ambient Calabi–Yau manifold. These special
+        submanifolds are difficult to construct in the compact
+        setting. I have recently constructed new examples in certain
+        compact Calabi–Yau 3-folds.
+      </p>
+
+      <p>
+        In certain extreme situations, the geometry of compact
+        Calabi-Yau manifolds can be understood through singular
+        Kähler–Einstein metrics and Calabi–Yau metrics with maximal
+        volume growth. This perspective informs the study of special
+        Lagrangian geometry, and my two research directions merge in
+        this interplay. A long-term goal, however, is to understand
+        Calabi–Yau manifolds and special Lagrangian submanifolds in
+        generic regions of their moduli spaces.
+      </p>
+
+      <p>
+        More recently, I have also become interested in G<sub>2</sub>
+        geometry and gauge theory.
+      </p>
+
+      <h3>Papers & preprints</h3>
+
       <ul>
-        <li>Spring 2025, Math 299C Reading Course (Dirac Operators and Index Theory)</li>
+        <li>(With Y. Chen, M. Hallgren, G. Székelyhidi, T. D. Tô,
+          F. Tong) On Kähler-Einstein
+          currents, <a href="https://arxiv.org/abs/2502.09825">arXiv:2502.09825</a>.
+          <p class="abstract">We show that a general class of
+            singular Kähler metrics with Ricci curvature bounded below
+            define Kähler currents. In particular the result applies
+            to singular Kähler–Einstein metrics on klt pairs, and an
+            analogous result holds for Kähler–Ricci solitons. In
+            addition we show that if a singular Kähler–Einstein metric
+            can be approximated by smooth metrics on a resolution
+            whose Ricci curvature has negative part that is bounded
+            uniformly in \(L^p\) for \(p>\frac{2n-1}{n}\), then the
+            metric defines an RCD space.</p>
+        </li>
+        <li>(With Y.-S. Lin) Special Lagrangian submanifolds in
+          K3-fibered Calabi-Yau
+          3-folds, <a href="https://arxiv.org/abs/2410.17662">arXiv:2410.17662</a>.
+          <p class="abstract">
+              We construct special Lagrangian submanifolds in collapsing
+              Calabi–Yau 3-folds fibered by K3 surfaces. As these
+              3-folds collapse, the special Lagrangians shrink to
+              1-dimensional graphs in the base, mirroring the
+              conjectured tropicalization of holomorphic curves in
+              collapsing SYZ torus-fibered Calabi–Yau manifolds. This
+              confirms predictions of Donaldson and Donaldson-Scaduto in
+              the Calabi–Yau setting. Additionally, we discuss our
+              results in the contexts of the Thomas–Yau conjecture, the
+              Donaldson–Scaduto conjecture, and mirror symmetry.
+          </p>
+        </li>
+        
+        <li>Nonuniqueness of Calabi-Yau metrics with maximal volume growth,
+          <a href="https://arxiv.org/abs/2206.08210">arXiv:2206.08210</a>.
+          <p class="abstract">
+            We construct a family of inequivalent Calabi–Yau metrics
+            on \(\mathbf{C}^3\) asymptotic to \(\mathbf{C} \times
+            A_2\) at infinity, in the sense that any two of these
+            metrics cannot be related by a scaling and a
+            biholomorphism. This provides the first example of
+            families of Calabi–Yau metrics asymptotic to a fixed
+            tangent cone at infinity, while keeping the underlying
+            complex structure fixed. We propose a refinement of a
+            conjecture of Székelyhidi addressing the classification of
+            such metrics.
+          </p>
+        </li>
+        
+        <li>(With G. Székelyhidi) Higher regularity for singular
+          Kähler–Einstein metrics,
+          <a href="https://arxiv.org/abs/2202.11083">arXiv:2202.11083</a>,
+          Duke Math. J. 172(18): 3521-3558 (1 December 2023).
+          <p class="abstract">
+            We study singular Kähler–Einstein metrics that are
+            obtained as non-collapsed limits of polarized
+            Kähler–Einstein manifolds. Our main result is that if the
+            metric tangent cone at a point is locally isomorphic to
+            the germ of the singularity, then the metric converges to
+            the metric on its tangent cone at a polynomial rate on the
+            level of Kähler potentials. When the tangent cone at the
+            point has a smooth cross section, then the result implies
+            polynomial convergence of the metric in the usual sense,
+            generalizing a result due to Hein-Sun. We show that a
+            similar result holds even in certain cases where the
+            tangent cone is not locally isomorphic to the germ of the
+            singularity. Finally we prove a rigidity result for
+            complete \(\partial\bar\partial\)-exact Calabi–Yau metrics
+            with maximal volume growth. This generalizes a result of
+            Conlon–Hein, which applies to the case of asymptotically
+            conical manifolds.</p>
+        </li>
+        
+        <li>Subquadratic harmonic functions on Calabi–Yau manifolds
+          with maximal volume
+          growth, <a href="https://arxiv.org/abs/1905.12965">arXiv:1905.12965</a>,
+          <a href="https://doi.org/10.1002/cpa.22182">Open Access</a>,
+          Comm. Pure Appl. Math. 77 (2024), no. 6,
+          3080–3106.
+          <p class="abstract">
+            We prove that on a complete Calabi–Yau manifold \(M\) with
+            Euclidean volume growth, a harmonic function with
+            subquadratic polynomial growth is the real part of a
+            holomorphic function. This generalizes a result of
+            Conlon–Hein. We prove this result by proving a Liouville
+            type theorem for harmonic \(1\)-forms, which follows from
+            a new local \(L^2\) estimate of the differential.
+          </p>
+        </li>
+        
+        <li>On Calabi–Yau manifolds with maximal volume growth, PhD
+          Thesis, <a href="https://curate.nd.edu/show/gf06g161m8w">Notre
+            Dame</a>, 2021.
+        </li>
+      </ul>
+    </section>
+    
+    <hr>
+    
+    <section id="teaching">
+      <h2>Teaching <a href="#top" class="back-to-top-link">↑</a></h2>
+      At Irvine:
+      <ul>
+        <li>Fall 2025, Math 2E Multivariable Calculus I, Instructor</li>
+        <li>Spring 2025, Math 299C Reading Course on <a href="https://web.math.ucsb.edu/~dai/book.pdf">Dirac Operators and Index Theory</a></li>
         <li>Spring 2025, Math 3A Introduction to Linear Algebra, Instructor</li>
         <li>Spring 2025, Math 2E Multivariable Calculus II, Instructor</li>
         <li>Winter 2025, Math 2E Multivariable Calculus II, Instructor</li>
         <li>Winter 2025, Math 240B Differential Geometry, Instructor</li>
       </ul>
-      <p><a href="javascript:;"
-         onclick="toggleDisplay('previous_teaching')">Past
-        teaching ±</a></p>
-
-      <div id="previous_teaching" style="display: none">
         At Vanderbilt:
         <ul>
           <li>Spring 2024, Math 2400 Differential Equations with Linear Algebra, Instructor</li>
-          <li>Fall 2023, Math 2300 Multivariable Calculus, Instructor, <a href="files/Math_2300_08.pdf">Syllabus</a></li>
+          <li>Fall 2023, Math 2300 Multivariable Calculus, Instructor</li>
         </ul>
 
         At Notre Dame:
@@ -117,158 +400,43 @@
             Equations, Teaching Assistant</li>
           <li>Fall 2017, MATH 10550 Calculus I, Teaching Assistant</li>
         </ul>
-      </div>
-      
-      <h2>Research</h2>
-      <p>I am currently interested in manifolds with special holonomy
-        and calibrated submanifolds. My main focus is on Calabi-Yau
-        manifolds and special Lagrangian submanifolds.</p>
+      </details>
+    </section>
 
-      <h3>Papers & preprints</h3>
-
+    <hr>
+    <section id="activities">
+      <h2> Activities organized <a href="#top" class="back-to-top-link">↑</a></h2>
       <ul>
-        <li>(With Y. Chen, M. Hallgren, G. Székelyhidi, T. D. Tô,
-          F. Tong) On Kähler-Einstein
-          currents, <a href="https://arxiv.org/abs/2502.09825">arXiv:2502.09825</a>.
-          <a href="javascript:;"
-             onclick="toggleDisplay('Currents')">±</a>
-          <div id="Currents" class="abstract" style="display: none">
-            We show that a general class of singular Kähler metrics
-            with Ricci curvature bounded below define Kähler
-            currents. In particular the result applies to singular
-            Kähler-Einstein metrics on klt pairs, and an analogous
-            result holds for Kähler-Ricci solitons. In addition we
-            show that if a singular Kähler-Einstein metric can be
-            approximated by smooth metrics on a resolution whose Ricci
-            curvature has negative part that is bounded uniformly in
-            \(L^p\) for \(p>\frac{2n−1}{n}\), then the metric defines
-            an RCD space.
-          </div>
+        <li>
+          <a href="https://sites.google.com/view/geometry-and-tacos/home-page">Geometry and TACoS</a>
+          <p class="abstract">
+            Co-organized the sessions Hermitian Yang-Mills Connections and Stability in Kähler Geometry.
+          </p>
         </li>
-        <li>(With Y.-S. Lin) Special Lagrangian submanifolds in
-          K3-fibered Calabi-Yau
-          3-folds, <a href="https://arxiv.org/abs/2410.17662">arXiv:2410.17662</a>.
-          <a href="javascript:;"
-             onclick="toggleDisplay('SLSpheres')">±</a>
-          <div id="SLSpheres" class="abstract" style="display: none">
-            We construct special Lagrangian submanifolds in collapsing
-            Calabi-Yau 3-folds fibered by K3 surfaces. As these
-            3-folds collapse, the special Lagrangians shrink to
-            1-dimensional graphs in the base, mirroring the
-            conjectured tropicalization of holomorphic curves in
-            collapsing SYZ torus-fibered Calabi-Yau manifolds. This
-            confirms predictions of Donaldson and Donaldson-Scaduto in
-            the Calabi-Yau setting. Additionally, we discuss our
-            results in the contexts of the Thomas-Yau conjecture, the
-            Donaldson-Scaduto conjecture, and mirror symmetry.
-          </div>
-
+        <li>
+          <a href="https://www.maths.ox.ac.uk/events/list/641">Oxford
+            Geometry and Analysis Seminar</a>
+          <p class="abstract">
+            Michaelmas 2021–Trinity 2023. Co-organized with Guillem
+            Cazassus, Ilyas Khan, and Henry Liu.</p>
         </li>
-        
-        <li>Nonuniqueness of Calabi-Yau metrics with maximal volume growth,
-          <a href="https://arxiv.org/abs/2206.08210">arXiv:2206.08210</a>.
-          <a href="javascript:;"
-             onclick="toggleDisplay('A2')">±</a>
-          <div id="A2" class="abstract" style="display: none">
-            We construct a family of inequivalent Calabi-Yau metrics
-            on \(\mathbf{C}^3\) asymptotic to \(\mathbf{C} \times
-            A_2\) at infinity, in the sense that any two of these
-            metrics cannot be related by a scaling and a
-            biholomorphism. This provides the first example of
-            families of Calabi-Yau metrics asymptotic to a fixed
-            tangent cone at infinity, while keeping the underlying
-            complex structure fixed. We propose a refinement of a
-            conjecture of Székelyhidi addressing the classification of
-            such metrics.
-          </div>
-        </li>
-        
-        <li>(With G. Székelyhidi) Higher regularity for singular
-            Kähler-Einstein metrics,
-          <a href="https://arxiv.org/abs/2202.11083">arXiv:2202.11083</a>,
-          <em>Duke Math. J. 172(18): 3521-3558 (1 December 2023).</em>
-          
-          <a href="javascript:;"
-             onclick="toggleDisplay('SingularKE')">±</a>
-          <div id="SingularKE" class="abstract" style="display: none">
-            We study singular Kähler-Einstein metrics that are
-            obtained as non-collapsed limits of polarized
-            Kähler-Einstein manifolds. Our main result is that if the
-            metric tangent cone at a point is locally isomorphic to
-            the germ of the singularity, then the metric converges to
-            the metric on its tangent cone at a polynomial rate on the
-            level of Kähler potentials. When the tangent cone at the
-            point has a smooth cross section, then the result implies
-            polynomial convergence of the metric in the usual sense,
-            generalizing a result due to Hein-Sun. We show that a
-            similar result holds even in certain cases where the
-            tangent cone is not locally isomorphic to the germ of the
-            singularity. Finally we prove a rigidity result for
-            complete \(\partial\bar\partial\)-exact Calabi-Yau metrics
-            with maximal volume growth. This generalizes a result of
-            Conlon-Hein, which applies to the case of asymptotically
-            conical manifolds.</div>
-        </li>
-        <li>Subquadratic harmonic functions on Calabi-Yau manifolds
-            with maximal volume
-          growth, <a href="https://arxiv.org/abs/1905.12965">arXiv:1905.12965</a>,
-          <a href="https://doi.org/10.1002/cpa.22182">Open Access</a>,
-            <em>Comm. Pure Appl. Math. <b>77</b> (2024), no. 6, 3080-3106.</em> <a href="javascript:;"
-onclick="toggleDisplay('subquadratic')">±</a>
-          <div id="subquadratic" class="abstract" style="display: none">
-            We prove that on a complete Calabi-Yau manifold \(M\) with
-            Euclidean volume growth, a harmonic function with
-            subquadratic polynomial growth is the real part of a
-            holomorphic function. This generalizes a result of
-            Conlon-Hein. We prove this result by proving a Liouville
-            type theorem for harmonic \(1\)-forms, which follows from
-            a new local \(L^2\) estimate of the differential.
-          </div>
-        </li>
-        <li>On Calabi-Yau manifolds with maximal volume growth, PhD
-            Thesis, <a href="https://curate.nd.edu/show/gf06g161m8w">Notre
-            Dame</a>, 2021.
-          <a href="javascript:;"
-                     onclick="toggleDisplay('thesis')">±</a>
-          <div id="thesis" class="abstract" style="display: none">
-            We study complete noncompact Calabi-Yau manifolds with
-            maximal volume growth. These manifolds arise as
-            desingularizations of affine Calabi-Yau varieties, and as
-            bubbles in the singularity formation of compact
-            Kähler-Einstein manifolds. The rather explicit metric
-            behavior of these manifolds enables us to understand the
-            metric behavior of the seemingly impenetrable compact
-            case. It is therefore of great importance to study the
-            uniqueness/deformation problem of these manifolds and
-            metrics. Our first result is that subquadratic harmonic
-            functions on such manifolds must be pluriharmonic. This
-            should be seen as the linear version of the
-            uniqueness/deformation problem. Next, we show that if a
-            \(\partial\bar\partial\)-exact Calabi-Yau manifold with
-            maximal volume growth has tangent cone at infinity which
-            splits an Euclidean factor, then the metric is unique
-            under subquadratic perturbation of the Kähler
-            potential. Geometrically, this means that the Calabi-Yau
-            metric is rigid under deformations that fix the tangent
-            cone at infinity. It is therefore interesting to know if a
-            quadratic perturbation of the Kähler potential, which
-            should correspond to an automorphism of the tangent cone
-            at infinity, really changes the metric. As a first step
-            toward understanding this picture, we construct new
-            Calabi-Yau metrics on \(\mathbf{C}^3\) with tangent cone
-            at infinity given by \(\mathbf{C} \times A_2\), and we
-            show that these metrics are inequivalent in the sense that
-            they are not related by isometries and scalings. This
-            existence result provides the first example of families of
-            Calabi-Yau metrics with the same tangent cone at infinity
-            while the underlying complex structure is
-            fixed.</div></li>
+        <li>
+          <a href="https://hackmd.io/@sgws/Fall2020">Student Seminar (Notre Dame) Fall 2020</a>
+          <p class="abstract">
+            Student geometry seminar held in Fall 2020 (covid days) with a
+            focus on talking about our own research.
+          </p>
       </ul>
+    </section>
 
-      <h2>Invited Talks</h2>
+    <hr>
+    
+    <section id="talks">
+      <h2>Invited Talks <a href="#top" class="back-to-top-link">↑</a></h2>
 
       <h3>Conferences and workshops</h3>
       <ul>
+        <li>Singular canonical Kähler metrics on compact and non-compact manifolds, Budapest, 09/2025</li>
         <li>New directions in G2 geometry, AIM Workshop, 03/2025</li>
         <li>PDE methods in Complex Geometry, AIM Workshop, 08/2024</li>
         <li>Geometry Crossing Singularities, TIMS, Taipei, 07/2024</li>
@@ -305,6 +473,11 @@ onclick="toggleDisplay('subquadratic')">±</a>
         <li>Differential Geometry Seminar, NCTS, 06/2019</li>
         <li>Geometric Analysis Seminar, Notre Dame, 04/2019</li>
       </ul>
-    </div>      
+    </section>
+
+    <footer>
+      Shih-Kai Chiu · Last updated July 2025 · <a href="#top">Back to Top ↑</a>
+    </footer>
+    
   </body>
 </html>
